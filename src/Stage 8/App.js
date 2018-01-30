@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import Employee from './models/Employee';
+import Employee from "./models/Employee";
+import EmployeeList from "./components/EmployeeList";
+import EmployeeEditor from "./components/EmployeeEditor";
 
 // components
 
@@ -14,13 +16,13 @@ class App extends Component {
   render() {
     return (
       <div id="app">
-        // render Header here
+        <Header id="app" />
         <div className="main-container">
-          // render EmployeeList here
-          // render EmployeeEditor
+          <EmployeeList id="main-container" />
+          <EmployeeEditor id="main-container" />
         </div>
       </div>
-    )
+    );
   }
 }
 
